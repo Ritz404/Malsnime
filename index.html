@@ -1,20 +1,24 @@
 <!doctype html>
 <html lang="en">
   <head>
+    <head>
     <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    
     <!-- Animate.css -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+
     <style>
         body {
             font-family: 'Poppins', sans-serif;
-            background: linear-gradient(135deg, #1f1c2c, #928dab);
+            background-image: url('https://images.unsplash.com/photo-1542343633-0642c4b4be20');
+            background-size: cover;
+            background-attachment: fixed;
+            background-position: center;
             color: #fff;
-            margin: 0;
-            padding: 0;
         }
         .btn {
-            padding: 10px 20px;
+            padding: 12px 24px;
             background-color: #ff4b2b;
             border: none;
             color: #fff;
@@ -24,21 +28,12 @@
         }
         .btn:hover {
             transform: scale(1.1);
+            background-color: #ff416c;
         }
         .hero {
             text-align: center;
-            padding: 100px 20px;
-            animation: fadeInUp 2s;
-        }
-        @keyframes fadeInUp {
-            from {
-                opacity: 0;
-                transform: translateY(50px);
-            }
-            to {
-                opacity: 1;
-                transform: translateY(0);
-            }
+            padding: 120px 20px;
+            animation: fadeIn 2s;
         }
     </style>
                             
@@ -52,12 +47,12 @@
     <title>ShiroNime</title>
   </head>
   <body>
-    <div class="hero animate__animated animate__fadeIn">
+    <div class="hero animate__animated animate__fadeInDown">
         <h1>Selamat Datang di ShiroNime</h1>
-        <p>Nikmati streaming anime tanpa batas dengan tampilan baru yang keren!</p>
-        <button class="btn">Jelajahi Sekarang</button>
+        <p>Temukan berbagai anime favoritmu dengan tampilan baru yang lebih keren!</p>
+        <button class="btn">Mulai Menonton</button>
     </div>
-                        
+                   
     <div id="root"></div>
   
     <script type="module" src="/src/main.jsx"></script>
